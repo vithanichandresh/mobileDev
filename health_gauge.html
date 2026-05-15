@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DashStack Flutter app portfolio project" />
+  <title>DashStack | AI-Powered & Cross-Platform Full Stack App Development</title>
+    <title>Dashstack - HealthGauge</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Custom CSS -->
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/lpv2-style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+</head>
+
+<body class="lpv2" data-bs-spy="scroll">
+    <!-- Enhanced Navigation -->
+    
+
+    <section class="hero-section schedule-section details-hero-section">
+        <div class="container position-relative">
+            <div class="schedule-inner">
+                <div class="row justify-content-center text-center bg-white align-items-end">
+                    <div class="col-lg-6 mt-lg-0 mt-4 px-1">
+                        <img src="../images/health_gauge_icon.png" alt="HealthGauge Icon" class="detail-img" />
+                        <h2 class="section-title text-start" alt="Health Monitoring">HealthGauge</h2>
+                        <p class="section-subtitle text-start">
+                            HealthGauge is built with a robust and scalable technology stack to deliver high
+                            performance, security, and a seamless user experience. It uses Firebase and Firebase Cloud
+                            Functions for real-time data management, authentication, and backend automation, along with
+                            notifications for instant health alerts and reminders. The app supports HTTP API
+                            integration and Bluetooth device pairing to connect effortlessly with wearable and smart
+                            health devices. Enhanced with rich animations, interactive graphs HealthGauge provides an
+                            intuitive experience across both IOS and Android apps.
+                        </p>
+                        <div class="text-start d-flex">
+                            <a href="https://apps.apple.com/us/app/healthgauge/id1625037376"
+                                class="text-decoration-none me-1">
+                                <img src="../images/app_store.svg" alt="App Store" class="img-fluid" />
+                            </a>
+                            <!-- <a href="" class="ms-3 text-decoration-none">
+                                <img src="../images/play_store.svg" alt="Play Store" class="img-fluid" />
+                            </a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-3 px-1">
+                        <img src="./images/health_gauge_hero_image.png" alt="HealthGauge heroImage" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feedback Section -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="feedback-inner">
+                <div class="row justify-content-center text-center align-items-center">
+                    <div class="col-lg-6 text-start text-lg-center">
+                        <img src="./images/review_image.png" alt="Review Image" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feedback-content mt-5 mt-lg-0">
+                            <div class="feedback-content-top d-flex align-items-center mb-4 gap-2">
+                                <img src="./images/star_round.png" alt="Review" />
+                                <p class="mb-0" aria-label="Client Feedback">Valuable 🧑🏼🤝🧑 Feedback</p>
+                            </div>
+                            <h2 class="section-title text-start">
+                                Outstanding Mobile Development Expertise
+                            </h2>
+                            <p class="section-subtitle text-start mb-5">
+                                DashStack Infotech delivered a high-quality Flutter mobile application for HealthGauge
+                                with excellent performance and a seamless cross-platform experience. The team expertly
+                                handled wearable integrations, real-time health tracking, and interactive data
+                                visualizations. Communication was clear, timelines were met, and every requirement was
+                                executed with precision. We highly recommend DashStack Infotech as a reliable Flutter
+                                development partner for health and wellness applications.
+                            </p>
+                            <div class="feedback-content-bottom d-flex align-items-center flex-row">
+                                <img src="./images/health_gauge_icon.png" alt="HealthGauge Icon" class="img-fluid" />
+                                <div class="d-flex flex-column text-start">
+                                    <h4>HealthGauge App</h4>
+                                    <p class="mb-0">Co-Founder at HealthGauge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- app-detail Section -->
+    <section class="platform-section app-detail-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-12">
+                    <div class="platform-content">
+                        <h2 class="section-title">Health Gauge</h2>
+                        <ul class="text-start">
+                            <li class="mb-3">
+                                <b>Health Gauge</b> is a comprehensive personal health monitoring and management mobile
+                                application designed to help users track, understand, and improve their overall
+                                wellness. Built using Flutter, HealthGauge delivers a fast, secure, and visually
+                                engaging cross-platform mobile app for both iOS and Android devices.The app integrates
+                                seamlessly with wearable devices,healthKit provide real-time
+                                health insights through an intuitive and user-friendly experience.
+                            </li>
+                            <li class="mb-3">
+                                <b>Key Features:</b>
+                                <ul>
+                                    <li>
+                                        <b>Real-Time Health Monitoring:</b>
+                                        Track essential health metrics such as heart rate, blood pressure, activity
+                                        levels, and body weight in real time with accurate data synchronization from
+                                        connected devices.
+                                    </li>
+                                    <li>
+                                        <b>Wearable & Smart Device Integration:</b>
+                                        HealthGauge supports Bluetooth-enabled health devices and smart weight scales,
+                                        enabling seamless pairing and continuous data collection.
+                                    </li>
+                                    <li>
+                                        <b>Interactive Graphs & Animations:</b>
+                                        Visually charts, animations, and progress graphs transform complex health
+                                        data into clear, actionable insights.
+                                    </li>
+                                    <li>
+                                        <b>FCM Notifications & Health Alerts:</b>
+                                        Firebase Cloud Messaging enables instant health alerts, reminders, and scheduled
+                                        notifications to keep users engaged and informed.
+                                    </li>
+                                    <li>
+                                        <b>HTTP API Integration:</b>
+                                        Secure HTTP API calling allows seamless communication with third-party services,
+                                        wearable platforms, and external health systems.
+                                    </li>
+                                    <li>
+                                        <b>Scheduled Health Reminders</b>.
+                                        Automated reminders and alerts help users maintain routines such as medication
+                                        tracking, activity goals, and regular health checks.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="app-screenshots">
+              <div class="app-screenshots-slide">
+          
+                <div class="text-center">
+                  <img src="../images/health_gauge_ss1.png"
+                       alt="Health Gauge App Login Screen Secure Health Monitoring Mobile App"
+                       class="img-fluid" />
+                </div>
+          
+                <div class="text-center">
+                  <img src="../images/health_gauge_ss2.png"
+                       alt="Health Gauge Heart Rate Monitoring Screen Fitness Tracking App"
+                       class="img-fluid" />
+                </div>
+          
+                <div class="text-center">
+                  <img src="../images/health_gauge_ss3.png"
+                       alt="Health Gauge Daily Heart Rate Analysis Graph Health Tracking App"
+                       class="img-fluid" />
+                </div>
+          
+                <div class="text-center">
+                  <img src="../images/health_gauge_ss4.png"
+                       alt="Health Gauge App Settings Screen Personalized Health Preferences"
+                       class="img-fluid" />
+                </div>
+          
+                <div class="text-center">
+                  <img src="../images/health_gauge_ss5.png"
+                       alt="Health Gauge Body Metrics Screen Timer BMI Height Weight Monitor App"
+                       class="img-fluid" />
+                </div>
+          
+              </div>
+            </div>
+          </div>
+          
+    </section>
+
+    <!-- Code & Tool Section -->
+    <section class="code-tool-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-12">
+                    <div class="code-tool-content">
+                        <div class="code-box">
+                            <div>
+                                <img src="../images/android_studio_icon.jpg" alt="Android-Studio Icon" />
+                            </div>
+                            <p class="mb-0">Android Studio</p>
+                        </div>
+                        <div class="code-box">
+                            <div>
+                                <img src="../images/flutter_icon.jpg" alt="Flutter Icon" />
+                            </div>
+                            <p class="mb-0">Flutter</p>
+                        </div>
+                        <div class="code-box">
+                            <div>
+                                <img src="../images/firebase_icon.jpg" alt="Firbase Icon" />
+                            </div>
+                            <p class="mb-0">FireBase</p>
+                        </div>
+                        <div class="code-box">
+                            <div>
+                                <img src="../images/xcode_icon.jpg" alt="X-Code Icon" />
+                            </div>
+                            <p class="mb-0">Xcode</p>
+                        </div>
+                        <div class="code-box">
+                            <div>
+                                <img src="../images/git_icon.jpg" alt="GitHub Icon" />
+                            </div>
+                            <p class="mb-0">Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features Section -->
+    <section class="work-section vision-section features-benefits-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-12 d-flex justify-content-between align-items-center">
+                    <div class="section-title">
+                        <h2>Features & Benefits</h2>
+                    </div>
+                    <div class="d-flex flex-wrap title-content">
+                        <p>
+                            HealthGauge is a comprehensive health monitoring and wellness management mobile application
+                            designed to help users track vital health metrics and make informed lifestyle decisions.
+                            Built with Flutter, HealthGauge delivers a high-performance, secure, and scalable
+                            cross-platform mobile app for iOS and Android, combining real-time health tracking,
+                            smart device integration, interactive analytics, and personalized health insights into a
+                            single powerful solution for wearable Devices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-content feature-boxs">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="feature-box mb-4">
+                            <div class="feature-box-head">
+                                <div class="feature-img">
+                                    <img src="./images/check.svg" alt="User Onboarding & Profile Setup" />
+                                </div>
+                                <h4>User Profile & Health Setup</h4>
+                            </div>
+                            <p>
+                                HealthGauge provides a smooth onboarding experience where users securely create health
+                                profiles by adding personal details, body metrics, and preferences, enabling accurate
+                                tracking and personalized health insights.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="feature-box mb-4">
+                            <div class="feature-box-head">
+                                <div class="feature-img">
+                                    <img src="./images/check.svg" alt="Readiness & Health Scoring" />
+                                </div>
+                                <h4>Real-Time Health Monitoring</h4>
+                            </div>
+                            <p>
+                                The app continuously tracks key health metrics such as heart rate, blood pressure,
+                                activity levels, and weight through wearable devices and smart sensors for real-time
+                                health visibility.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="feature-box mb-4">
+                            <div class="feature-box-head">
+                                <div class="feature-img">
+                                    <img src="./images/check.svg" alt="Personalized Fitness Insights" />
+                                </div>
+                                <h4>Smart Device & Bluetooth Integration</h4>
+                            </div>
+                            <p>
+                                HealthGauge supports Bluetooth-enabled health devices and smart weight scales, ensuring
+                                seamless pairing and reliable data synchronization for accurate and automated health
+                                monitoring.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="feature-box mb-4">
+                            <div class="feature-box-head">
+                                <div class="feature-img">
+                                    <img src="./images/check.svg" alt="Challenges & Gamification" />
+                                </div>
+                                <h4>Interactive Graphs & Health Analytics</h4>
+                            </div>
+                            <p>
+                                Interactive graphs, animations, and visual dashboards transform complex health data into
+                                clear
+                                insights, helping users track trends, measure progress, and make data-driven health
+                                decisions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="feature-box mb-4">
+                            <div class="feature-box-head">
+                                <div class="feature-img">
+                                    <img src="./images/check.svg" alt="Advanced Analytics Dashboard" />
+                                </div>
+                                <h4>Smart Notifications & Reminders</h4>
+                            </div>
+                            <p>
+                                Powered by FCM notifications, HealthGauge delivers timely health alerts, reminders, and
+                                activity prompts to help users stay consistent with their wellness goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Schedule Meeting Section -->
+    
+
+    <!-- Enhanced Footer -->
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- Modal Loader -->
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/modal-loader.js" defer></script>
+    <!-- API Handler -->
+    <script src="./js/api.js" defer></script>
+    <!-- Custom JS -->
+    <script src="./js/custom.js" defer></script>
+    <script type="text/javascript">
+        $(document).on("ready", function () {
+            $(".app-screenshots-slide").slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
+                dots: false,
+                vertical: false,
+                centerMode: true,
+                slidesToShow: 3.7,
+                arrows: false,
+        
+        
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: 3,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2.7,
+                        },
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            slidesToShow: 1.7,
+                        },
+                    },
+                ],
+            });
+        });
+        // Close Bootstrap collapse when clicking outside (navbar collapse)
+        document.addEventListener("click", function (event) {
+            const navbar = document.querySelector(".navbar");
+            const collapseEl = document.querySelector(".navbar-collapse");
+            if (!collapseEl) return;
+
+            // If click isn't inside navbar and collapse is open, hide it
+            if (
+                !navbar.contains(event.target) &&
+                collapseEl.classList.contains("show")
+            ) {
+                // Use Bootstrap Collapse API
+                const collapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+                collapse.hide();
+            }
+        });
+
+        $(document).ready(function () {
+            const $navbar = $("#navbarNav"); // your collapse ID
+
+            // When navbar opens
+            $navbar.on("shown.bs.collapse", function () {
+                $("body").addClass("overflow-hidden");
+            });
+
+            // When navbar closes (outside click, link click, ESC, anything)
+            $navbar.on("hidden.bs.collapse", function () {
+                $("body").removeClass("overflow-hidden");
+            });
+        });
+    </script>
+</body>
+
+</html>

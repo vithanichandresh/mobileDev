@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DashStack Flutter app portfolio project" />
+  <title>DashStack | AI-Powered & Cross-Platform Full Stack App Development</title>
+  <title>Dashstack - Urban Swift</title>
+  <link rel="icon" href="../images/favicon.png" type="image/png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css" />
+</head>
+
+<body data-bs-spy="scroll">
+  <!-- Enhanced Navigation -->
+  <nav class="navbar navbar-expand-lg" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">DASHSTACK</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-consultation w-auto" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          Free Consultation
+          <img src="../images/black_arrow.svg" alt="Arrow Right" />
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section schedule-section details-hero-section">
+    <div class="container position-relative">
+      <div class="schedule-inner">
+        <div class="row justify-content-center text-center bg-white align-items-end">
+          <div class="col-lg-6 mt-lg-0 mt-4 px-1">
+            <img src=".../images/urban_swift_icon.png" alt="UrbanSwift Icon" class="detail-img" />
+            <h2 class="section-title text-start">UrbanSwift</h2>
+            <p class="section-subtitle text-start">
+              <b>UrbanSwift</b> is a next-generation logistics ecosystem
+              designed to transform urban parcel delivery. By connecting
+              customers, delivery partners, and administrators through a
+              unified digital platform, UrbanSwift makes on-<b>demand logistics faster, smarter</b>, and more accessible
+              — powered by cutting-edge cloud and
+              cross-platform technology.
+            </p>
+            <div class="text-start d-flex">
+              <!-- <a href="" class="text-decoration-none me-1">
+                  <img
+                    src=".../images/app_store.svg"
+                    alt="App Store"
+                    class="img-fluid"
+                  />
+                </a> -->
+              <a href="https://play.google.com/store/apps/developer?id=UrbanSwift+LLC&hl=en_IN"
+                class="ms-3 text-decoration-none">
+                <img src=".../images/play_store.svg" alt="Play Store" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-3 px-1">
+            <img src="../images/urban_swift_hero_img.png" alt="UrbanSwift heroImage" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- feedback Section -->
+  <section class="feedback-section">
+    <div class="container">
+      <div class="feedback-inner">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-lg-6 text-start text-lg-center">
+            <img src="../images/review_img.png" alt="review image" class="img-fluid" />
+          </div>
+          <div class="col-lg-6">
+            <div class="feedback-content mt-5 mt-lg-0">
+              <div class="feedback-content-top d-flex align-items-center mb-4 gap-2">
+                <img src="../images/star_round.png" alt="Review" />
+                <p class="mb-0" aria-label="Client Feedback">Valuable 🧑🏼🤝🧑 Feedback</p>
+              </div>
+              <h2 class="section-title text-start">Reliable And Skilled</h2>
+              <p class="section-subtitle text-start mb-5">
+              Working with this team was excellent. They delivered a high-quality product with clean design, smooth performance, and great attention to detail. They were proactive, met every deadline, and made the process stress-free through their technical expertise. I highly recommend them as a reliable and skilled development partner.
+              </p>
+              <div class="feedback-content-bottom d-flex align-items-center flex-row">
+                <img src="../images/urban_logo.svg" alt="UrbanSwift Icon" class="img-fluid" />
+                <div class="d-flex flex-column text-start">
+                  <h4>Nkongho Mengot</h4>
+                  <p class="mb-0">UrbanSwift LLC, Co founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- app-detail Section -->
+  <section class="platform-section app-detail-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-12">
+          <div class="platform-content">
+            <h2 class="section-title">
+              UrbanSwift – A Complete Smart Mobility Platform
+            </h2>
+            <ul class="text-start">
+              <li class="mb-3">
+                <b>UrbanSwift User:</b> UrbanSwift User is an advanced Flutter-based ecosystem designed to simplify
+                urban logistics and personal transport through a powerful, user-centric interface. The platform uses an
+                intuitive map interface to schedule pickups and drop-offs, track deliveries live, communicate with
+                drivers in real time, and complete payments securely using local mobile money integrations.
+              </li>
+              <li class="mb-3">
+                <b>UrbanSwift Delivery:</b> The Delivery Partner app is built to simplify every step of the courier’s
+                workflow. Partners can accept delivery jobs instantly, view optimized routes, communicate with customers
+                in-app, and track earnings transparently. Designed mobile-first, it ensures fast performance even in
+                low-network environments, supporting daily earnings summaries, route history, and efficient job tracking
+                to boost productivity and income potential.
+              </li>
+              <li>
+                <b>UrbanSwift Admin:</b> UrbanSwift’s Admin Dashboard gives complete operational control. Admins can
+                manage delivery requests, approve or suspend drivers, view user analytics, monitor KPIs like delivery
+                time and service quality, and send real-time notifications. Built with scalability in mind, the admin
+                panel supports data-driven decision-making and continuous improvement across the entire system.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="app-screenshots">
+        <div class="app-screenshots-slide">
+
+          <div class="text-center">
+            <img src=".../images/urban_swift_ss1.png"
+              alt="UrbanSwift Delivery App Map Screen Pickup Location GPS Tracking" class="img-fluid" />
+          </div>
+
+          <div class="text-center">
+            <img src=".../images/urban_swift_ss2.png"
+              alt="UrbanSwift Drop-Off Route Screen Real-Time Navigation Polyline Map" class="img-fluid" />
+          </div>
+
+          <div class="text-center">
+            <img src=".../images/urban_swift_ss3.png"
+              alt="UrbanSwift Courier App Order Acceptance Pickup and Drop-Off Details" class="img-fluid" />
+          </div>
+
+          <div class="text-center">
+            <img src=".../images/urban_swift_ss4.png" alt="UrbanSwift Order Details Screen Delivery Status and Tracking"
+              class="img-fluid" />
+          </div>
+
+          <div class="text-center">
+            <img src=".../images/urban_swift_ss5.png"
+              alt="UrbanSwift Admin Dashboard Delivery Management and Analytics Panel" class="img-fluid" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Code & Tool Section -->
+  <section class="code-tool-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-12">
+          <div class="code-tool-content">
+            <div class="code-box">
+              <div>
+                <img src=".../images/android_studio_icon.jpg" alt="Android-Studio Icon" />
+              </div>
+              <p class="mb-0">Android Studio</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/flutter_icon.jpg" alt="Flutter Icon" />
+              </div>
+              <p class="mb-0">Flutter</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/xcode_icon.jpg" alt="X-Code Icon" />
+              </div>
+              <p class="mb-0">Xcode</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/firebase_icon.jpg" alt="Firebase Icon" />
+              </div>
+              <p class="mb-0">Firebase</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/git_icon.jpg" alt="GitHub Icon" />
+              </div>
+              <p class="mb-0">Github</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/node_icon.jpg" alt="Node Icon" />
+              </div>
+              <p class="mb-0">Node.js</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/figma_icon.jpg" alt="Figma Icon" />
+              </div>
+              <p class="mb-0">UI/UX</p>
+            </div>
+            <div class="code-box">
+              <div>
+                <img src=".../images/security_icon.jpg" alt="Q/A Icon" />
+              </div>
+              <p class="mb-0">Q/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typography Section -->
+  <section class="typography-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="typography-content">
+            <h3 class="section-title text-white">Satoshi</h3>
+            <div class="typography-info d-flex">
+              <p class="typography-item">
+                Satoshi is a modern and stylish sans serif font designed to suit a range of applications such as
+                branding, logotype packaging, quotes, music poste
+              </p>
+              <p class="typography-item">
+                photography feels editorial and genuine, and ownable illustrative pattern work exudes energy and
+                movement. The color palette consists of tonal greens that communicate growth, renewal, and energy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h2 class="text-white">Typography & Colors</h2>
+          <div class="row">
+            <div class="col-6">
+              <div class="color-box orange">
+                <span class="color-box-top text-white">Primary Color</span>
+                <span class="color-box-bottom text-white">color <b>FF5C2C</b></span>
+              </div>
+            </div>
+            <div class="col-6 d-flex flex-column gap-3 ps-0">
+              <div class="color-box secondary">
+                <span class="color-box-top">Secondary color</span>
+                <span class="color-box-bottom">#E2E2E2</span>
+              </div>
+              <div class="color-box secondary bg-white">
+                <span class="color-box-top">Background color</span>
+                <span class="color-box-bottom">#FFFFFF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 mt-5 mt-md-0">
+          <div class="typography-pixels">
+            <div class="typography-px">
+              <span>Headline</span>
+              <span>90 px</span>
+              <span>100%</span>
+            </div>
+            <div class="typography-output">
+              Inventory
+            </div>
+          </div>
+          <div class="typography-pixels">
+            <div class="typography-px">
+              <span>Logo Text</span>
+              <span>90 px</span>
+              <span>100%</span>
+            </div>
+            <div class="typography-logo-text">
+              Delivery is delayed
+            </div>
+          </div>
+          <div class="typography-pixels mb-0">
+            <div class="typography-px">
+              <span>Body Text</span>
+              <span>90 px</span>
+              <span>100%</span>
+            </div>
+            <div class="typography-body-text">
+              Esrimated demand 100+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- features Section -->
+  <section class="work-section vision-section features-benefits-section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-12 d-flex justify-content-between align-items-center">
+          <div class="section-title">
+            <h2>Features & Benefits</h2>
+          </div>
+          <div class="d-flex flex-wrap title-content">
+            <p>
+              Saasmo is an autonomous sales orchestration platform that helps
+              sales and marketing teams convert website visitors instantly.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vision-content feature-boxs">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="../images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Real-Time Delivery Tracking</h4>
+              </div>
+              <p>
+                Customers can track parcels live through an interactive map interface, ensuring transparency and peace
+                of mind throughout the entire delivery journey.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="../images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Secure Payments & Instant Earnings</h4>
+              </div>
+              <p>
+                Integrated with MTN and Orange Money, the system supports secure customer payments and enables drivers
+                to access instant withdrawals with transparent earnings tracking.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="../images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Smart Driver Assignment</h4>
+              </div>
+              <p>
+                Geo-targeted routing powered by Google Maps SDK and GeoFlutterFire automatically assigns the nearest
+                available driver, reducing delivery times by up to 40%.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box mb-4">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="../images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Scalable Admin Control Dashboard</h4>
+              </div>
+              <p>
+                Admins gain full visibility over operations with live analytics, KPI monitoring, and role-based
+                notifications for efficient decision-making.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box mb-4 mb-md-0">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="../images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Seamless Multi-Platform Experience</h4>
+              </div>
+              <p>
+                Built with Flutter and Firebase, UrbanSwift runs smoothly across iOS, Android, and web—offering fast,
+                consistent performance for all users.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box">
+              <div class="feature-box-head">
+                <div class="feature-img">
+                  <img src="../images/check.svg" alt="Check 1" />
+                </div>
+                <h4>Multi-Language, Cloud-Powered Infrastructure</h4>
+              </div>
+              <p>
+                With bilingual (English/French) support and Firebase serverless architecture, UrbanSwift scales easily
+                to new markets while maintaining speed and reliability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Meeting Section -->
+  <section class="schedule-section schedule-meeting">
+    <div class="container">
+      <div class="schedule-inner mb-0">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h2 class="section-title text-start">
+              Have a project in mind? Let’s get start
+            </h2>
+            <p class="section-subtitle text-start">
+              Discuss your idea with our expert team and get honest, practical
+              feedback. We’ll help you refine your concept and plan the right
+              development approach.
+            </p>
+            <div class="text-start">
+              <button class="btn btn-schedule d-inline-block" type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Schedule a meeting
+                <img class="ms-2" src="../images/white_arrow.svg" alt="Arrow Right" />
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-5">
+            <img src="../images/meeting.png" alt="Schedule Meeting" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 d-none">
+        <div class="col-lg-6 col-md-12">
+          <h5>Subscribe newsletter</h5>
+          <p class="mb-4">
+            Subscribe our newsletter to get the latest news and updates!
+          </p>
+          <div class="footer-email">
+            <img src="../images/email.svg" alt="Newsletter Icon" class="me-2" />
+            <input type="email" class="form-control" placeholder="Enter your email address" id="emailInput" />
+            <button class="btn btn-subscribe">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4">Company</h5>
+          <ul>
+            <li><a href="#about">Who we are</a></li>
+            <li><a href="#services">Our services</a></li>
+            <li><a href="#clients">Our clients</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <h5 class="mb-4">Services</h5>
+          <ul>
+            <li><a href="#">Planning</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <img src="../images/footer_img.png" alt="Footer Logo" class="mb-3 img-fluid" />
+        </div>
+      </div>
+      <div class="d-flex align-items-center quote-section">
+        <div class="d-flex align-items-center text-left mb-4 mb-sm-4 mb-lg-0">
+          <img src="../images/logo.svg" alt="DashStck FooterLogo" class="footer-logo me-4" />
+          <p class="mb-0">
+            Powering Digital Journeys from<br />
+            Startups to Enterprises.
+          </p>
+        </div>
+        <div class="d-flex title-content flex-wrap">
+          <div>
+            <span>Drop Us An Email</span>
+            <a class="d-block" href="mailto:team@dashstack.tech">
+              team@dashstack.tech
+            </a>
+          </div>
+          <div>
+            <span>Call Our Project Experts</span>
+            <a class="d-block" href="tel:+918153916802">(+91) 8153 9168 02</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p>© 2026 DashStack Infotech – Flutter App Development Company. All rights reserved.</p>
+        <div class="social-icons">
+          <a class="me-2" href="https://in.linkedin.com/company/dashstack-infotech">
+            <img src="../images/linkedin_icon.png" alt="LinkeDin" />
+          </a>
+          <a class="me-2" href="https://pub.dev/publishers/dashstack.tech/packages">
+            <img src="../images/flutter_icon.png" alt="Flutter Open-Source Packages" />
+          </a>
+          <a class="me-2" href="https://share.google/jNeEXJylERyU6zyFs">
+            <img src="../images/google_icon.png" alt="Google" />
+          </a>
+          <a href="https://www.instagram.com/flutter_dev_ravi/">
+            <img src="../images/instagram_icon.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="../js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <!-- Modal Loader -->
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/modal-loader.js" defer></script>
+  <!-- API Handler -->
+  <script src="../js/api.js" defer></script>
+  <!-- Custom JS -->
+  <script src="../js/custom.js" defer></script>
+  <script type="text/javascript">
+    $(document).on("ready", function () {
+      $(".app-screenshots-slide").slick({
+        dots: false,
+        vertical: false,
+        centerMode: true,
+        slidesToShow: 3.7,
+        arrows: false,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2.7,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1.7,
+            },
+          },
+        ],
+      });
+    });
+    // Close Bootstrap collapse when clicking outside (navbar collapse)
+    document.addEventListener("click", function (event) {
+      const navbar = document.querySelector(".navbar");
+      const collapseEl = document.querySelector(".navbar-collapse");
+      if (!collapseEl) return;
+
+      // If click isn't inside navbar and collapse is open, hide it
+      if (
+        !navbar.contains(event.target) &&
+        collapseEl.classList.contains("show")
+      ) {
+        // Use Bootstrap Collapse API
+        const collapse = bootstrap.Collapse.getOrCreateInstance(collapseEl);
+        collapse.hide();
+      }
+    });
+
+    $(document).ready(function () {
+      const $navbar = $("#navbarNav"); // your collapse ID
+
+      // When navbar opens
+      $navbar.on("shown.bs.collapse", function () {
+        $("body").addClass("overflow-hidden");
+      });
+
+      // When navbar closes (outside click, link click, ESC, anything)
+      $navbar.on("hidden.bs.collapse", function () {
+        $("body").removeClass("overflow-hidden");
+      });
+    });
+  </script>
+</body>
+
+</html>

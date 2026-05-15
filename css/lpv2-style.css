@@ -1,0 +1,668 @@
+.lpv2 {
+    background-color: #ffffff;
+    background-image: none;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Fixed Blue Glow Vignette - Matches dashstack.tech */
+.lpv2::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.lpv2 .hero-section {
+    background: transparent;
+    color: #131313;
+    padding: 100px 0 100px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.lpv2 .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.lpv2 .stats-section {
+    background: transparent;
+}
+
+.lpv2 .about-section {
+    background-color: transparent;
+}
+
+.lpv2 .hero-section .row {
+    flex-wrap: nowrap;
+}
+
+.lpv2 .hero-section .hero-content {
+    align-items: start;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.lpv2 .hero-content-wrapper {
+    max-width: 650px;
+    width: 50%;
+}
+
+.lpv2 .hero-section .hero-title,
+.lpv2 .hero-section .hero-description {
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+
+.lpv2 .hero-section .hero-title {
+    font-weight: 500;
+    font-size: 70px;
+    letter-spacing: -3%;
+    text-transform: capitalize;
+}
+
+.lpv2 .hero-section .hero-description {
+    font-weight: 400;
+    font-size: 17px !important;
+    color: #5a5a59;
+}
+
+.lpv2 .lpv2-icon-text {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.lpv2 .lpv2-icon-text img {
+    max-width: 42px;
+    width: 100%;
+    height: auto;
+}
+
+.lpv2 .hero-subtitle {
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: capitalize;
+    letter-spacing: -3%;
+    color: #6015ff;
+    margin-bottom: 12px;
+}
+
+.lpv2 .hero-image-wrapper {
+    max-width: 550px;
+    width: 40%;
+}
+
+.lpv2 .stats-section #counter {
+    margin-bottom: 0;
+}
+
+.lpv2 .schedule-section {
+    padding: 64px 0;
+}
+
+/* App Detailing Page Grid Pattern - Applied to non-#f3f4ff sections */
+.lpv2 .details-hero-section,
+.lpv2 .app-detail-section,
+.lpv2 .code-tool-section,
+.lpv2 .typography-section,
+.lpv2 .features-benefits-section {
+    background-image: url("../images/pattern.png");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.lpv2 .about-section {
+    padding: 120px 0;
+    background-image: url('../images/lpv2_about_pattern.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.lpv2 .about-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.lpv2 .about-badge-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.lpv2 .about-badge {
+    background: #ffeff3;
+    padding: 8px 16px;
+    border-radius: 100px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lpv2 .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.lpv2 .about-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    max-width: 800px;
+    color: #131313;
+    margin: 0;
+}
+
+.lpv2 .about-description-wrapper {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: #131313;
+    max-width: 850px;
+}
+
+.lpv2 .about-person-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.lpv2 .person-info-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.lpv2 .vertical-divider {
+    width: 1px;
+    height: 48px;
+    background-color: #e4e4e4;
+}
+
+.lpv2 .github-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.lpv2 .github-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #131313;
+    margin: 0;
+}
+
+.lpv2 .github-info p {
+    font-size: 14px;
+    color: #5a5a59;
+    margin: 0;
+    color: #131313;
+    margin: 0;
+}
+
+.lpv2 .github-info p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #131313;
+    margin: 0;
+}
+
+.lpv2 .services-section .nav-pills .nav-link {
+    margin-bottom: 6px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 50px;
+}
+
+.lpv2 .services-section .nav-pills {
+    background-color: #4d4d4d33;
+    border-radius: 42px;
+    max-width: 331px;
+    width: 28%;
+    backdrop-filter: blur(54px);
+    margin: 0;
+}
+
+.lpv2 .services-section .tab-content {
+    max-width: 839px;
+    width: 65%;
+}
+
+.lpv2 .schedule-section.skill-section .container .schedule-inner {
+    margin-bottom: 0;
+    padding: 60px;
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.lpv2 .schedule-section.skill-section h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 54px;
+    letter-spacing: -2%;
+    color: #131313;
+}
+
+.lpv2 .schedule-section.skill-section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #131313;
+    max-width: 285px;
+    margin-bottom: 0;
+}
+
+.lpv2 .schedule-section.skill-section .section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.lpv2 .schedule-section.skill-section .skill-group-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.lpv2 .schedule-section.skill-section .skill-group-wrapper .skill-name {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    max-width: 957px;
+}
+
+.lpv2 .schedule-section.skill-section .skill-group-wrapper .skill-name p {
+    padding: 16px 24px;
+    border: 0.8px solid #d2d2d2;
+    border-radius: 60px;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+}
+
+.lpv2 .work-section {
+    padding: 120px 0;
+    margin-bottom: 0;
+}
+
+.lpv2 .work-section .title-content-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.lpv2 .work-section.vision-section {
+    padding: 0;
+}
+
+@media (max-width: 1366px) {
+    .lpv2 .hero-section .hero-title {
+        font-size: 65px;
+    }
+
+    .lpv2 .services-section .nav-pills .nav-link {
+        padding: 12px 10px 12px 52px;
+        margin-bottom: 12px;
+    }
+
+    .lpv2 .services-section h3 {
+        font-size: 40px;
+    }
+
+    .lpv2 .services-section .tab-content {
+        padding-left: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .lpv2 .services-section .nav-pills {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .lpv2 .hero-section .hero-title {
+        font-size: 52px;
+    }
+
+    .lpv2 .hero-subtitle {
+        font-size: 32px;
+    }
+
+    .lpv2 .work-section .row.g-4 .col-lg-3 .work-card {
+        padding: 22px 16px;
+        border-radius: 22px;
+    }
+
+    .lpv2 .work-section .row.g-4 .col-lg-3 .work-card h3 {
+        font-size: 20px;
+    }
+
+    .lpv2 .work-section .row.g-4 .col-lg-3 .work-card .work-badge .work-badge-image {
+        height: 42px;
+        width: 42px;
+    }
+
+    .lpv2 .work-section .row.g-4 .col-lg-3 .work-card .work-badge .work-badge-image img {
+        width: 26px;
+    }
+
+    .lpv2 .work-section .row.g-4 .col-lg-3 .work-card .work-badge {
+        font-size: 36px;
+    }
+
+    .lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide img.mobile_imgs {
+        max-width: 342px;
+        min-width: 188px;
+    }
+
+    .lpv2 .schedule-section h2 {
+        font-size: 46px;
+    }
+
+    .lpv2 .schedule-section .container .schedule-inner {
+        padding: 66px 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .lpv2 .hero-section .hero-title {
+        font-size: 58px;
+    }
+
+    .lpv2 .services-section .nav-pills {
+        width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .lpv2 .hero-section {
+        padding: 58px 0 58px;
+    }
+
+    .lpv2 .hero-section .hero-title {
+        font-size: 38px;
+    }
+
+    .lpv2 .hero-subtitle {
+        font-size: 22px;
+    }
+
+    .lpv2 .services-section .nav-pills {
+        padding: 20px;
+    }
+
+    .lpv2 .services-section .nav-pills .nav-link::before {
+        left: 18px;
+    }
+
+    .lpv2 .services-section .nav-pills .nav-link {
+        padding: 10px 10px 10px 40px;
+        margin-bottom: 12px;
+    }
+
+    .lpv2 .services-section h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .lpv2 .services-section ul li {
+        margin-bottom: 12px;
+    }
+
+    .lpv2 .services-section ul li img {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        margin-top: 4px;
+    }
+
+    .lpv2 .services-section div.mb-md-5 {
+        margin-bottom: 32px !important;
+    }
+
+    .lpv2 .services-section {
+        padding: 62px 0;
+    }
+
+    .lpv2 .schedule-section.skill-section .container .schedule-inner {
+        padding: 32px;
+    }
+
+    .lpv2 .schedule-section h2 {
+        font-size: 32px !important;
+        line-height: 36px !important;
+    }
+
+    .lpv2 .work-section {
+        padding: 36px 0 100px;
+    }
+
+    .lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .lpv2 .tab-wrapper {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .lpv2 .services-section .nav {
+        display: flex;
+        flex-direction: row !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        padding: 12px;
+    }
+
+    .lpv2 .services-section .tab-content {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .lpv2 .services-section p,
+    .lpv2 .services-section li {
+        font-size: 16px;
+        line-height: 24px;
+        color: #dadae4cc;
+    }
+}
+
+@media (max-width: 767px) {
+    .lpv2 .hero-section {
+        padding: 20px 10px 10px;
+    }
+
+    .lpv2 .hero-section .hero-content-wrapper {
+        padding-top: 22px;
+        padding-bottom: 12px;
+    }
+
+    .lpv2 .hero-section .row {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .lpv2 .hero-section .row div {
+        width: 100%;
+    }
+
+    .lpv2 .hero-section .hero-title,
+    .lpv2 .about-title {
+        font-size: 36px;
+    }
+
+    .lpv2 .hero-subtitle {
+        font-size: 22px;
+        margin: 0px;
+    }
+
+    .lpv2 .about-section {
+        padding: 50px 10px;
+    }
+
+    .lpv2 .about-content-wrapper {
+        gap: 32px;
+    }
+
+    .lpv2 .schedule-section {
+        padding: 52px 8px;
+    }
+
+    .lpv2 .schedule-section.skill-section .container .schedule-inner {
+        padding: 26px 18px;
+    }
+
+    .lpv2 .schedule-section.skill-section .section-title {
+        flex-wrap: wrap;
+    }
+
+    .lpv2 .services-section {
+        padding: 58px 10px;
+    }
+
+    .lpv2 .services-section .nav {
+        padding: 6px 12px;
+    }
+
+    .lpv2 .services-section ul li {
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .lpv2 .services-section ul li img {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    .lpv2 .schedule-section.skill-section .container .schedule-inner .d-wrap {
+        flex-wrap: wrap;
+    }
+
+    .lpv2 .schedule-section.skill-section .section-title {
+        width: 100%;
+    }
+
+    .lpv2 .schedule-section.skill-section h2 {
+        margin: 0px;
+        line-height: 32px;
+    }
+
+    .lpv2 .schedule-section.skill-section .container .schedule-inner .d-wrap .title-content p {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .lpv2 .schedule-section.skill-section .skill-name {
+        gap: 10px;
+    }
+
+    .lpv2 .schedule-section.skill-section .skill-name p {
+        padding: 12px 20px;
+    }
+
+    .lpv2 .work-section {
+        padding: 50px 10px;
+    }
+
+    .lpv2 .work-section .row.g-4 .col-lg-3:nth-child(2) .work-card .work-badge,
+    .lpv2 .work-section .row.g-4 .col-lg-3:nth-child(4) .work-card .work-badge {
+        flex-direction: row-reverse;
+    }
+
+    .lpv2 .vision-section .vision-content {
+        padding: 36px 15px;
+    }
+
+    .lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content p {
+        font-size: 22px !important;
+        padding: 0px 12px;
+    }
+
+    .lpv2 .platform-section.testimonial-section .testimonial-box {
+        padding: 10px;
+    }
+
+    .lpv2 .services-section .nav-pills .nav-link {
+        margin: 0px;
+    }
+
+    .lpv2 .services-section .tab-content {
+        padding-left: 6px;
+    }
+
+    .lpv2 .services-section div.mb-md-5 {
+        margin-bottom: 22px !important;
+    }
+
+    .lpv2 .schedule-section .container .schedule-inner {
+        padding: 32px 26px 6px;
+    }
+
+    .lpv2 .services-section .nav-pills {
+        border-radius: 50px 0px 0px 50px;
+    }
+}
+
+@media (max-width: 684px) {
+    .lpv2 .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .lpv2 .footer .footer-bottom {
+        text-align: center;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+}
