@@ -292,29 +292,124 @@
     gap: 24px;
 }
 
-.lpv2 .schedule-section.skill-section .skill-group-wrapper {
+.lpv2 .schedule-section.skill-section .skills-categories-grid {
     width: 100%;
-    display: flex;
 }
 
-.lpv2 .schedule-section.skill-section .skill-group-wrapper .skill-name {
+.lpv2 .schedule-section.skill-section .skill-category-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 24px;
+    padding: 28px;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+}
+
+.lpv2 .schedule-section.skill-section .skill-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+    border-color: #6015ff;
+}
+
+.lpv2 .schedule-section.skill-section .category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #f4f4f6;
+    padding-bottom: 16px;
+}
+
+.lpv2 .schedule-section.skill-section .category-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.lpv2 .schedule-section.skill-section .category-icon.mobile-icon {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.lpv2 .schedule-section.skill-section .category-icon.ai-icon {
+    background: #fdf2f8;
+    color: #db2777;
+}
+
+.lpv2 .schedule-section.skill-section .category-icon.rtc-icon {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.lpv2 .schedule-section.skill-section .category-icon.cloud-icon {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.lpv2 .schedule-section.skill-section .category-icon.design-icon {
+    background: #fbf7f0;
+    color: #d97706;
+}
+
+.lpv2 .schedule-section.skill-section .category-header h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #131313;
+    margin: 0;
+}
+
+.lpv2 .schedule-section.skill-section .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    width: 100%;
-    max-width: 957px;
+    gap: 10px;
 }
 
-.lpv2 .schedule-section.skill-section .skill-group-wrapper .skill-name p {
-    padding: 16px 24px;
-    border: 0.8px solid #d2d2d2;
-    border-radius: 60px;
+.lpv2 .schedule-section.skill-section .skill-tag {
+    height: 38px;
+    padding: 0 16px;
+    border: 1px solid #e2e2e8;
+    border-radius: 100px;
+    font-size: 13px;
     font-weight: 500;
-    font-size: 14px !important;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    margin: 0;
+    color: #555566;
+    background: #fafafc;
+    transition: all 0.2s ease;
+    cursor: default;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.lpv2 .schedule-section.skill-section .skill-tag:hover {
+    background: #ffffff;
+    border-color: #6015ff;
+    color: #6015ff;
+}
+
+.lpv2 .schedule-section.skill-section .skill-tag.featured {
+    height: 42px;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #f5f0ff 0%, #edf6ff 100%);
+    border: 1px dashed #6015ff;
+    color: #1e0a52;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 12px rgba(96, 21, 255, 0.05);
+}
+
+.lpv2 .schedule-section.skill-section .skill-tag.featured:hover {
+    background: linear-gradient(135deg, #6015ff 0%, #7f3eff 100%);
+    border-color: #6015ff;
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(96, 21, 255, 0.2);
 }
 
 .lpv2 .work-section {
@@ -602,12 +697,20 @@
         padding-top: 20px;
     }
 
-    .lpv2 .schedule-section.skill-section .skill-name {
-        gap: 10px;
+    .lpv2 .schedule-section.skill-section .skill-category-card {
+        padding: 20px;
     }
 
-    .lpv2 .schedule-section.skill-section .skill-name p {
-        padding: 12px 20px;
+    .lpv2 .schedule-section.skill-section .skill-tag {
+        height: 32px;
+        padding: 0 12px;
+        font-size: 12px;
+    }
+
+    .lpv2 .schedule-section.skill-section .skill-tag.featured {
+        height: 36px;
+        padding: 0 16px;
+        font-size: 13px;
     }
 
     .lpv2 .work-section {
@@ -630,6 +733,7 @@
 
     .lpv2 .platform-section.testimonial-section .testimonial-box {
         padding: 10px;
+        padding-bottom: 10px 12px;
     }
 
     .lpv2 .services-section .nav-pills .nav-link {
@@ -664,5 +768,340 @@
         justify-content: center !important;
         align-items: center !important;
         gap: 10px;
+    }
+}
+
+/* Code Samples & Certifications Section */
+.lpv2 .code-certs-section {
+    position: relative;
+    background: transparent;
+    padding: 140px 0;
+    background-image: url('../images/lpv2_about_pattern.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.lpv2 .code-certs-section .credentials-badge {
+    background: #ffeff3;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff3366;
+    display: inline-flex;
+    margin: 8px 16px;
+}
+
+.lpv2 .code-certs-section .section-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    color: #131313;
+    margin-top: 12px;
+}
+
+.lpv2 .code-certs-section .section-subtitle {
+    font-size: 18px;
+    color: #5a5a59;
+    max-width: 700px;
+    margin: 16px auto 0;
+    line-height: 1.5;
+}
+
+/* Repository Cards */
+.lpv2 .code-certs-section .repo-grid {
+    margin-top: 60px;
+}
+
+.lpv2 .code-certs-section .repo-card {
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 24px;
+    padding: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.lpv2 .code-certs-section .repo-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border-color: #6015ff;
+}
+
+.lpv2 .code-certs-section .repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.lpv2 .code-certs-section .repo-icon {
+    font-size: 24px;
+    color: #131313;
+    width: 48px;
+    height: 48px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.lpv2 .code-certs-section .repo-card:hover .repo-icon {
+    background: #6015ff;
+    color: #ffffff;
+}
+
+.lpv2 .code-certs-section .repo-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.lpv2 .code-certs-section .repo-desc {
+    font-size: 15px;
+    color: #5a5a59;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.lpv2 .code-certs-section .repo-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.lpv2 .code-certs-section .repo-tag {
+    background: #f3f4ff;
+    color: #6015ff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 100px;
+}
+
+.lpv2 .code-certs-section .repo-cta {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6015ff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: auto;
+    transition: gap 0.2s ease;
+}
+
+.lpv2 .code-certs-section .repo-cta:hover {
+    gap: 12px;
+    color: #844aff;
+}
+
+/* Certifications Section */
+.lpv2 .certifications-section {
+    position: relative;
+    background-color: #ffffff;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.lpv2 .certifications-section .cert-showcase-container {
+    background: linear-gradient(146.64deg, #f3f4ff 2.74%, #ffffff 82.33%);
+    padding: 60px 50px;
+    border-radius: 50px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.02);
+    border: 1px solid #eaeaea;
+}
+
+.lpv2 .certifications-section .showcase-title {
+    font-size: 36px;
+    color: #131313;
+    line-height: 1.25;
+}
+
+.lpv2 .certifications-section .showcase-desc {
+    font-size: 16px;
+    color: #5a5a59;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.lpv2 .certifications-section .achievement-badge {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e1e2d;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+/* Cert Showcase Cards on Right Side */
+.lpv2 .certifications-section .cert-showcase-card {
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    border-radius: 24px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lpv2 .certifications-section .cert-showcase-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border-color: #6015ff;
+}
+
+.lpv2 .certifications-section .cert-img-wrapper {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #f9f9f9;
+    border: 1px solid #f0f0f0;
+}
+
+.lpv2 .certifications-section .cert-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.lpv2 .certifications-section .cert-showcase-card:hover .cert-img {
+    transform: scale(1.05);
+}
+
+.lpv2 .certifications-section .cert-index {
+    font-size: 16px;
+    font-family: Abyssinica SIL, serif;
+    background: #d8fa50;
+    color: #1e1e2d;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.lpv2 .certifications-section .cert-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.lpv2 .certifications-section .cert-text {
+    font-size: 14px;
+    color: #5a5a59;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Let's Connect Subsection */
+.lpv2 .code-certs-section .connect-subsection {
+    margin-top: 100px;
+    background: radial-gradient(circle at 10% 20%, #f3f4ff 0%, #ffffff 90%);
+    border: 1px solid #e4e4e4;
+    border-radius: 40px;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.lpv2 .code-certs-section .connect-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 20px;
+}
+
+.lpv2 .code-certs-section .connect-desc {
+    font-size: 16px;
+    color: #5a5a59;
+    max-width: 800px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .lpv2 .code-certs-section .section-title {
+        font-size: 38px;
+    }
+
+    .lpv2 .code-certs-section .connect-subsection {
+        padding: 40px 24px;
+    }
+
+    .lpv2 .code-certs-section .connect-title {
+        font-size: 32px;
+    }
+
+    .lpv2 .certifications-section .cert-showcase-container {
+        padding: 40px 24px;
+    }
+
+    .lpv2 .certifications-section .showcase-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .lpv2 .code-certs-section,
+    .lpv2 .certifications-section {
+        padding: 60px 0;
+    }
+
+    .lpv2 .code-certs-section .section-title {
+        font-size: 32px;
+    }
+
+    .lpv2 .code-certs-section .subsection-title,
+    .lpv2 .certifications-section .subsection-title {
+        font-size: 26px;
+    }
+
+    .lpv2 .code-certs-section .repo-grid {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .lpv2 .code-certs-section,
+    .lpv2 .certifications-section {
+        padding: 30px 0;
+    }
+
+    .lpv2 .certifications-section .cert-showcase-container {
+        padding: 30px 16px;
+    }
+
+    .lpv2 .certifications-section .showcase-title {
+        font-size: 24px;
     }
 }
