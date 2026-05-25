@@ -1120,3 +1120,289 @@
         font-size: 28px;
     }
 }
+
+/* ==========================================
+   Typography Normalization & Hierarchy
+   ========================================== */
+
+/* Normalized Section Headings for Layout v2 */
+.lpv2 .about-title,
+.lpv2 .services-section .section-title,
+.lpv2 .schedule-section.skill-section h2,
+.lpv2 .work-section .section-title h2,
+.lpv2 .code-certs-section .section-title,
+.lpv2 .certifications-section .section-title,
+.lpv2 .platform-section h2,
+.lpv2 .platform-section.testimonial-section .section-title,
+.lpv2 .feedback-section .section-title,
+.lpv2 .app-detail-section .section-title,
+.lpv2 .features-benefits-section .section-title h2 {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 64px !important;
+    line-height: 1.15 !important;
+    letter-spacing: -2px !important;
+    text-transform: capitalize !important;
+    color: #131313 !important;
+}
+
+/* Services title on dark background needs white text */
+.lpv2 .services-section .section-title {
+    color: #ffffff !important;
+}
+
+/* Responsive Normalized Headings */
+@media (max-width: 1199px) {
+    .lpv2 .about-title,
+    .lpv2 .services-section .section-title,
+    .lpv2 .schedule-section.skill-section h2,
+    .lpv2 .work-section .section-title h2,
+    .lpv2 .code-certs-section .section-title,
+    .lpv2 .certifications-section .section-title,
+    .lpv2 .platform-section h2,
+    .lpv2 .platform-section.testimonial-section .section-title,
+    .lpv2 .feedback-section .section-title,
+    .lpv2 .app-detail-section .section-title,
+    .lpv2 .features-benefits-section .section-title h2 {
+        font-size: 42px !important;
+        letter-spacing: -1.5px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .lpv2 .about-title,
+    .lpv2 .services-section .section-title,
+    .lpv2 .schedule-section.skill-section h2,
+    .lpv2 .work-section .section-title h2,
+    .lpv2 .code-certs-section .section-title,
+    .lpv2 .certifications-section .section-title,
+    .lpv2 .platform-section h2,
+    .lpv2 .platform-section.testimonial-section .section-title,
+    .lpv2 .feedback-section .section-title,
+    .lpv2 .app-detail-section .section-title,
+    .lpv2 .features-benefits-section .section-title h2 {
+        font-size: 38px !important;
+        letter-spacing: -1px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .lpv2 .about-title,
+    .lpv2 .services-section .section-title,
+    .lpv2 .schedule-section.skill-section h2,
+    .lpv2 .work-section .section-title h2,
+    .lpv2 .code-certs-section .section-title,
+    .lpv2 .certifications-section .section-title,
+    .lpv2 .platform-section h2,
+    .lpv2 .platform-section.testimonial-section .section-title,
+    .lpv2 .feedback-section .section-title,
+    .lpv2 .app-detail-section .section-title,
+    .lpv2 .features-benefits-section .section-title h2 {
+        font-size: 32px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .lpv2 .about-title,
+    .lpv2 .services-section .section-title,
+    .lpv2 .schedule-section.skill-section h2,
+    .lpv2 .work-section .section-title h2,
+    .lpv2 .code-certs-section .section-title,
+    .lpv2 .certifications-section .section-title,
+    .lpv2 .platform-section h2,
+    .lpv2 .platform-section.testimonial-section .section-title,
+    .lpv2 .feedback-section .section-title,
+    .lpv2 .app-detail-section .section-title,
+    .lpv2 .features-benefits-section .section-title h2 {
+        font-size: 28px !important;
+    }
+}
+
+/* Normalized Subtitles for Layout v2 */
+.lpv2 .code-certs-section .section-subtitle,
+.lpv2 .certifications-section .section-subtitle {
+    font-family: "Poppins", sans-serif !important;
+    font-size: 18px !important;
+    color: #5a5a59 !important;
+    max-width: 700px !important;
+    margin: 16px auto 0 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+}
+
+@media (max-width: 767px) {
+    .lpv2 .code-certs-section .section-subtitle,
+    .lpv2 .certifications-section .section-subtitle {
+        font-size: 16px !important;
+        margin-top: 12px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .lpv2 .code-certs-section .section-subtitle,
+    .lpv2 .certifications-section .section-subtitle {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* Fix Work Card Heading Typography (h3 is used in HTML instead of h5) */
+.lpv2 .work-section .row.g-4 .col-lg-3 .work-card h3 {
+    color: #131313;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-family: "Poppins", sans-serif;
+    transition: all .3s ease;
+}
+
+/* Standardize generalFont to use Poppins on Layout v2 pages */
+.lpv2 .generalFont {
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* ==========================================
+   Certifications Section Adjustments
+   ========================================== */
+
+/* Fix credentials-badge styling inside Certifications section */
+.lpv2 .certifications-section .credentials-badge {
+    background: #ffeff3 !important;
+    padding: 8px 16px !important;
+    border-radius: 100px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #ff3366 !important;
+    display: inline-flex !important;
+    margin: 0 0 16px 0 !important; /* Left-aligned: remove left/top margins for perfect alignment */
+}
+
+/* Spacing and Alignment responsive adjustments */
+@media (max-width: 991px) {
+    .lpv2 .certifications-section .cert-showcase-container {
+        padding: 40px 24px !important;
+    }
+    
+    .lpv2 .certifications-section .showcase-content {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .lpv2 .certifications-section .credentials-badge {
+        margin: 0 auto 16px !important;
+    }
+    
+    .lpv2 .certifications-section .achievement-tags {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .lpv2 .certifications-section .cert-showcase-container {
+        padding: 32px 20px !important; /* Slightly more breathable mobile padding */
+    }
+    
+    .lpv2 .certifications-section .achievement-badge {
+        font-size: 12px !important;
+        padding: 6px 12px !important;
+    }
+}
+
+/* Page Title Sizing and Styling for Case Study Pages */
+.lpv2 .details-hero-section .section-title {
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 600 !important;
+    color: #131313 !important;
+}
+
+/* ==========================================
+   Premium UI Consistency & Fallback Typography
+   ========================================== */
+
+/* Global Typography Fallback Mapping to Poppins for Layout v2 */
+.lpv2,
+.lpv2 p,
+.lpv2 span,
+.lpv2 h1,
+.lpv2 h2,
+.lpv2 h3,
+.lpv2 h4,
+.lpv2 h5,
+.lpv2 h6,
+.lpv2 a,
+.lpv2 li,
+.lpv2 div,
+.lpv2 button,
+.lpv2 input,
+.lpv2 textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Explicitly preserve Abyssinica SIL for elegant serif styling elements */
+.lpv2 .serif-font,
+.lpv2 .cert-index,
+.lpv2 .testimonial-quote,
+.lpv2 .feedback-content-top p,
+.lpv2 .testimonial-user p {
+    font-family: "Abyssinica SIL", serif !important;
+}
+
+/* Premium Button Hover & Spring Transformations */
+.lpv2 .btn-consultation,
+.lpv2 .btn-schedule,
+.lpv2 .btn-newsletter,
+.lpv2 .portfolio-overlay .btn-view-details {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.lpv2 .btn-consultation:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05) !important;
+    border-color: #6015ff !important;
+}
+
+.lpv2 .btn-schedule:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 30px rgba(96, 21, 255, 0.4) !important;
+}
+
+.lpv2 .btn-newsletter:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.lpv2 .portfolio-overlay .btn-view-details:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 24px rgba(255, 51, 102, 0.3) !important;
+}
+
+/* Normalize Form Inputs and Heights */
+.lpv2 input,
+.lpv2 textarea,
+.lpv2 button {
+    border-radius: 12px !important;
+    outline: none !important;
+}
+
+/* Cohesive card elevations and depth */
+.lpv2 .skill-category-card,
+.lpv2 .repo-card,
+.lpv2 .cert-showcase-card,
+.lpv2 .feature-box {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.lpv2 .skill-category-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.04) !important;
+}
+
+.lpv2 .feature-box:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.04) !important;
+    border-color: #6015ff !important;
+}

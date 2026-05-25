@@ -126,7 +126,7 @@ async function submitContactForm(event) {
               icon: 'success',
               title: '✨ Success!',
               html: '<p><strong>' + fullName + '</strong>, your inquiry was sent successfully!</p>' +
-                    '<p style="color: #666; font-size: 14px; margin-top: 10px;">We will review your project and contact you at <strong>' + email + '</strong> within 24 hours</p>',
+                    '<p style="color: #666; font-size: 14px; margin-top: 10px;">I will review your project and contact you at <strong>' + email + '</strong> within 24 hours</p>',
               confirmButtonColor: '#10b981',
               confirmButtonText: 'Done',
               timer: 6000
@@ -161,7 +161,7 @@ async function submitContactForm(event) {
             title: '❌ Submission Failed',
             html: '<p>Unable to send your inquiry.</p>' +
                   '<p style="color: #666; font-size: 13px; margin-top: 8px;">' + (error.message || 'Please try again.') + '</p>' +
-                  '<p style="color: #999; font-size: 12px; margin-top: 8px;">If the problem persists, contact us directly at team@dashstack.tech</p>',
+                  '<p style="color: #999; font-size: 12px; margin-top: 8px;">If the problem persists, contact me directly at team@dashstack.tech</p>',
             confirmButtonColor: '#10b981'
           });
         }
