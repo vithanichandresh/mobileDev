@@ -732,8 +732,10 @@
     }
 
     .lpv2 .platform-section.testimonial-section .testimonial-box {
-        padding: 10px;
-        padding-bottom: 10px 12px;
+        padding: 10px !important;
+    }
+    .lpv2 .platform-section.testimonial-section .testimonial-box .testimonial-inner {
+        padding: 24px 16px !important;
     }
 
     .lpv2 .services-section .nav-pills .nav-link {
@@ -1405,4 +1407,219 @@
     transform: translateY(-6px) !important;
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.04) !important;
     border-color: #6015ff !important;
+}
+
+/* ==========================================
+   Section Spacing Rhythm & Visual Flow
+   ========================================== */
+
+/* Normalize section top/bottom padding for clean visual rhythm */
+.lpv2 .about-section,
+.lpv2 .services-section,
+.lpv2 .schedule-section.skill-section,
+.lpv2 .work-section:not(.vision-section),
+.lpv2 .code-certs-section,
+.lpv2 .certifications-section,
+.lpv2 .platform-section.testimonial-section,
+.lpv2 .feedback-section,
+.lpv2 .app-detail-section,
+.lpv2 .features-benefits-section {
+    padding: 100px 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Tighten padding on case study hero sections */
+.lpv2 .details-hero-section {
+    padding: 80px 0 40px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Dynamic Spacing for Mobile & Tablet viewports */
+@media (max-width: 991px) {
+    .lpv2 .about-section,
+    .lpv2 .services-section,
+    .lpv2 .schedule-section.skill-section,
+    .lpv2 .work-section:not(.vision-section),
+    .lpv2 .code-certs-section,
+    .lpv2 .certifications-section,
+    .lpv2 .platform-section.testimonial-section,
+    .lpv2 .feedback-section,
+    .lpv2 .app-detail-section,
+    .lpv2 .features-benefits-section {
+        padding: 70px 0 !important;
+    }
+    
+    .lpv2 .details-hero-section {
+        padding: 60px 0 30px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .lpv2 .about-section,
+    .lpv2 .services-section,
+    .lpv2 .schedule-section.skill-section,
+    .lpv2 .work-section:not(.vision-section),
+    .lpv2 .code-certs-section,
+    .lpv2 .certifications-section,
+    .lpv2 .platform-section.testimonial-section,
+    .lpv2 .feedback-section,
+    .lpv2 .app-detail-section,
+    .lpv2 .features-benefits-section {
+        padding: 50px 0 !important;
+    }
+    
+    .lpv2 .details-hero-section {
+        padding: 40px 0 20px !important;
+    }
+}
+
+/* ==========================================
+   Primary CTA Visual Dominance Normalization
+   ========================================== */
+.lpv2 .btn-schedule {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    padding: 14px 28px !important;
+    border-radius: 100px !important;
+    letter-spacing: -0.2px !important;
+    background: radial-gradient(circle, #844aff, #6015ff) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(96, 21, 255, 0.25) !important;
+    border: 1px solid rgba(96, 21, 255, 0.1) !important;
+}
+
+/* Scale down CTAs for mobile to avoid text wrapping */
+@media (max-width: 575px) {
+    .lpv2 .btn-schedule {
+        font-size: 14px !important;
+        padding: 10px 20px !important;
+    }
+}
+
+/* ==========================================
+   Premium UI/UX Polish Pass Refinements
+   ========================================== */
+
+/* 1. Spacing Rhythm Normalization for Case Study Pages */
+.lpv2 .code-tool-section {
+    padding: 0 0 60px 0 !important;
+}
+
+.lpv2 .typography-section {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    padding: 60px !important;
+}
+
+@media (max-width: 991px) {
+    .lpv2 .code-tool-section {
+        padding: 0 0 40px 0 !important;
+    }
+    .lpv2 .typography-section {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+        padding: 40px 24px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .lpv2 .code-tool-section {
+        padding: 0 0 30px 0 !important;
+    }
+    .lpv2 .typography-section {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        padding: 30px 16px !important;
+    }
+}
+
+/* 2. CTA Hierarchy & Focus Improvement */
+/* Soften portfolio slide detail links (secondary CTAs) to prevent visual competition */
+.lpv2 .vision-slide-content .btn-schedule {
+    background: rgba(96, 21, 255, 0.07) !important;
+    color: #6015ff !important;
+    border: 1px solid rgba(96, 21, 255, 0.15) !important;
+    box-shadow: none !important;
+}
+
+/* Transform the white arrow image to match secondary text color at rest */
+.lpv2 .vision-slide-content .btn-schedule img {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(7441%) hue-rotate(264deg) brightness(85%) contrast(116%) !important;
+    transition: filter 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Hover transitions for secondary CTAs: elevate to primary gradient state */
+.lpv2 .vision-slide-content .btn-schedule:hover {
+    background: radial-gradient(circle, #844aff, #6015ff) !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 25px rgba(96, 21, 255, 0.25) !important;
+    border-color: rgba(96, 21, 255, 0.1) !important;
+}
+
+/* Revert arrow filter back to white on hover */
+.lpv2 .vision-slide-content .btn-schedule:hover img {
+    filter: none !important;
+}
+
+/* 3. Mobile & Tablet Layout Alignment Polish */
+@media (max-width: 767px) {
+    /* Center portfolio slide contents and buttons when stacked on mobile */
+    .lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .vision-slide-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide .btn-schedule {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        justify-content: center !important;
+    }
+}
+
+/* 4. Hover & Premium Interaction Refinements */
+/* Work cards transition smoothness */
+.lpv2 .work-section .row.g-4 .col-lg-3 .work-card {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Smooth zoom transition for portfolio screenshot images on hover */
+.lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide img {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.lpv2 .vision-section .vision-content .vision-carousel .vision-slides .vision-slide:hover img {
+    transform: scale(1.02) !important;
+}
+
+/* Smooth zoom transition for case study app screenshots */
+.lpv2 .app-screenshots .slick-slide img {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    border-radius: 12px !important;
+}
+
+.lpv2 .app-screenshots .slick-slide img:hover {
+    transform: scale(1.04) !important;
+}
+
+/* Certifications images hover smoothness using bezier curve */
+.lpv2 .certifications-section .cert-img {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Testimonial cards subtle hover elevation lift */
+.lpv2 .platform-section.testimonial-section .testimonial-box {
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.lpv2 .platform-section.testimonial-section .testimonial-box:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.03) !important;
 }
